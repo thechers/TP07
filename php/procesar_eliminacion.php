@@ -1,9 +1,8 @@
 <?php 
-	require 'conexion.php';
+	require 'articulo_listado.php';
 	require_once 'encabezado.php';
 		if ($conexion && !empty($_GET['id'])) {
 			$id = $_GET['id'];
-			$conexion = conectar();
 			$consulta = 'DELETE FROM articulo WHERE id = ?';
 			$sentencia = mysqli_prepare($conexion,$consulta);
 			mysqli_stmt_bind_param($sentencia,'i',$id);
