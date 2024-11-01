@@ -11,8 +11,14 @@
             </article>
 
             <section>
-                <a class="btn btn-primary me-2">Aceptar</a>
-                <a class="btn btn-secondary">Cancelar</a>
+                <?php
+                var_dump($_GET['id']);
+                if (!empty($_GET['id'])) {
+                echo '<a class="btn btn-primary me-2" href="procesar_eliminacion.php?id="'.$id.'>Aceptar</a>
+                <a class="btn btn-secondary">Cancelar</a>';
+                }
+                
+                ?>
             </section>
         </section>
     </main>

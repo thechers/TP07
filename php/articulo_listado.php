@@ -71,7 +71,7 @@
                                    echo '<td><img src=../img/articulos/'.$foto.'></td><td>'.$nombre.'</td><td>'.$cat.'</td><td>$ '.number_format($precio,2,",",".").'</td>';
                                }
                                
-                               echo '<td><a href=modificar.php><img src=../img/modificar.png></a></td><td><a href=eliminar.php?id='.$id.'><img src=../img/eliminar.png></a></td></tr><tr>';
+                               echo '<td><a href=modificar.php><img src=../img/modificar.png></a></td><td><a href="articulo_eliminar.php?id="'.$id.'><img src=../img/eliminar.png></a></td></tr><tr>';
                            }
                            echo '</tr>';
 
